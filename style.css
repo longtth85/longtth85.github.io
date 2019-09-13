@@ -18,6 +18,7 @@ nav{
     min-height: 8vh;
     background-color: #5d4954;
     font-family: 'Poppins', sans-serif;
+    z-index: 5;
 }
 
 .logo{
@@ -121,6 +122,9 @@ nav{
 /*********************
 Styling for the slider
 *********************/
+header{
+    padding-bottom: 200px;
+}
 .slider{
     position: absolute;
     top: 0;
@@ -169,4 +173,33 @@ section{
     left: 0;
     top: 0;
     opacity: 0.1;
+}
+
+/*********************
+Styling for the intro
+*********************/
+.intro-title{
+    text-align: center;
+}
+.intro-text{
+    width: 30%;
+    opacity: 0;
+    transform:translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.intro-text-appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#selfie{
+    width: 460px;
+    height: auto;
 }
