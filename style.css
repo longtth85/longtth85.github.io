@@ -16,13 +16,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
     font-family: 'Poppins', sans-serif;
-    z-index: 5;
+    background: #1a1a1a;
+    color: #ebebeb;
 }
 
 .logo{
-    color: #ebebeb;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -46,92 +45,17 @@ nav{
     font-size: 14px;
 }
 
-.burger {
-    display: none;
-}
-
-.burger div{
-    width: 25px;
-    height: 2px;
-    background-color: #ebebeb;
-    margin: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1024px){
-    .nav-links{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0;
-        height: 92vh;
-        top: 8vh;
-        background-color: #5d4954;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in
-    }
-
-    .nav-links li{
-        opacity: 0;
-    }
-
-    .burger{
-        display: block;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes  navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2{
-    opacity: 0;
-}
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 /*********************
 Styling for the slider
 *********************/
-header{
-    padding-bottom: 200px;
-}
 .slider{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to left, #ba7453, #d1a984);
+    /**background: linear-gradient(to left, #2a2a2a, #1a1a1a);**/
+    background: #1a1a1a;
     z-index: -1;
 }
 
@@ -140,18 +64,22 @@ section{
     height: 80vh;
     justify-content: center;
     align-items: center;
+    margin-bottom: 12vh;
 }
 
 .img-container {
     height: 60%;
     width: 100%;
     position: relative;
+    z-index: 1;
 }
 
 .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+    box-shadow: 10px 10px 40px 0 rgba(0,0,0,0.75);
 }
 
 .headline{
@@ -178,6 +106,12 @@ section{
 /*********************
 Styling for the intro
 *********************/
+.intro{
+    height: 100vh;
+    background: #1a1a1a;
+    color: #ebebeb;
+}
+
 .intro-title{
     text-align: center;
 }
@@ -186,6 +120,7 @@ Styling for the intro
     opacity: 0;
     transform:translateY(20px);
     transition: 0.5s all ease-in-out;
+    z-index: 1;
 }
 
 .intro-text-appear{
