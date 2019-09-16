@@ -6,6 +6,7 @@ Basic Styling Removal
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /***********************************
@@ -106,16 +107,23 @@ section{
 /*********************
 Styling for the intro
 *********************/
+
+
 .intro{
     height: 100vh;
     background: #1a1a1a;
     color: #ebebeb;
+    display: flex;
+    justify-content: center;
 }
 
-.intro-title{
-    text-align: center;
+img, iframe{
+    max-width: 100%;
+    max-height: 100%;
 }
-.intro-text{
+
+
+.intro-text, .intro-text2, .intro-text3, .intro-text4{
     width: 30%;
     opacity: 0;
     transform:translateY(20px);
@@ -137,4 +145,45 @@ Styling for the intro
 #selfie{
     width: 460px;
     height: auto;
+}
+
+#kassen{
+    height: 420px;
+    width: auto;
+}
+
+/*********************
+Styling for the footer
+*********************/
+
+footer{
+    height: 30vh;
+    background: #1a1a1a;
+    color: #ebebeb;
+    padding: 20px;
+}
+
+.fa {
+    padding: 10px;
+    margin: 1px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #ebebeb;
+    color: #1a1a1a;
+}
+
+.footer-content{
+    padding: 10px;
+}
+
+.footer-link{
+    color: #ebebeb;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.fa-facebook{
+    width: 35px;
 }
