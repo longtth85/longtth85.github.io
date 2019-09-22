@@ -32,6 +32,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 30%;
+    flex-wrap: wrap;
 }
 
 .nav-links li{
@@ -145,11 +146,17 @@ img, iframe{
 #selfie{
     width: 460px;
     height: auto;
+    box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.75);
 }
 
 #kassen{
     height: 420px;
     width: auto;
+    box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.75);
+}
+
+iframe{
+    box-shadow: 3px 10px 10px 0 rgba(0,0,0,0.75);
 }
 
 /*********************
@@ -186,4 +193,18 @@ footer{
 
 .fa-facebook{
     width: 35px;
+}
+
+@media only screen and (max-width: 720px) {
+    .intro-content{
+        flex-direction: column;
+    }
+
+    .intro-text, .intro-text2, .intro-text3, .intro-text4{
+        width: 90%;
+    }
+
+    .headline{
+        font-size: 30px;
+    }
 }
