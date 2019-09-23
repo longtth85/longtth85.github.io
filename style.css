@@ -207,4 +207,13 @@ footer{
     .headline{
         font-size: 30px;
     }
+
+    #kassen{
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #selfie{
+        width: 400px;
+    }
 }
