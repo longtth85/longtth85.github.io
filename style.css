@@ -195,7 +195,7 @@ footer{
     width: 35px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
     .intro-content{
         flex-direction: column;
     }
