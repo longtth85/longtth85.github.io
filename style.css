@@ -159,6 +159,30 @@ iframe{
     box-shadow: 3px 10px 10px 0 rgba(0,0,0,0.75);
 }
 
+.icons{
+    background: #1a1a1a;
+    color: #ebebeb;
+}
+
+.icons h2{
+    padding: 20px;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+.icon-html{
+    width: auto;
+    height: 100px;
+}
 /*********************
 Styling for the footer
 *********************/
@@ -194,6 +218,7 @@ footer{
 .fa-facebook{
     width: 35px;
 }
+
 
 @media only screen and (max-width: 960px) {
     .intro-content{
