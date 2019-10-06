@@ -70,6 +70,9 @@ section{
 }
 
 .img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 60%;
     width: 100%;
     position: relative;
@@ -77,34 +80,25 @@ section{
 }
 
 .img-container img{
-    width: 100%;
+    color: #ebebeb;
+    width: auto;
     height: 100%;
     object-fit: cover;
     position: relative;
     box-shadow: 10px 10px 40px 0 rgba(0,0,0,0.75);
 }
 
-.headline{
-    position: absolute;
-    top: 72%;
-    left: 12%;
-    font-size: 100px;
-    transform: translate(-20%, -70%);
+.slider-text{
+    display: flex;
+    flex-direction: column;
     color: #ebebeb;
-    z-index: 3;
+    align-items: center;
+    width: 30%;
 }
 
-.img-container::after{
-    content: "";
-    background: black;
+.slider-text h2{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.1;
 }
-
 /*********************
 Styling for the intro
 *********************/
