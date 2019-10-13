@@ -220,12 +220,8 @@ footer{
         flex-direction: column;
     }
 
-    .intro-text, .intro-text2, .intro-text3, .intro-text4{
+    .intro-text, .intro-text2, .intro-text3, .intro-text4, .slider-text{
         width: 90%;
-    }
-
-    .headline{
-        font-size: 30px;
     }
 
     #kassen{
